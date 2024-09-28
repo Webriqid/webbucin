@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe5e5;
+    color: black;
+    text-align: center;
+}
+
+header {
+    background-color: #ffcccc;
+    padding: 20px;
+}
+
+.gallery-hidden {
+    display: none;
+}
+
+.gallery-container {
+    display: flex;
+    overflow: hidden;
+    width: 300px;
+    margin: 20px auto;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    transition: transform 0.5s ease; /* Perbaikan di sini */
+}
+
+button {
+    background-color: #f66;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer; /* Menambahkan kursor pointer */
+}
+
+button:hover {
+    background-color: #e55; /* Efek hover */
+}

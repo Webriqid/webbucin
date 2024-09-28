@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang Sayangku</h1>
+        <h2>Halo sayangku gimana kabarnya hari nih cape yaa? ini aku buatkan website untuk nyimpan foto kamuu semoga kamu happy ya</h2>
+        <button onclick="toggleGalleryAndPlay()">Lihat Galeri & Putar Lagu</button>
+    </header>
+    <main>
+        <audio id="audio" loop>
+            <source src="lagu.mp3" type="audio/mp3">
+        </audio>
+        <div id="gallery" class="gallery-hidden">
+            <div class="gallery-container">
+                <img src="12.jpeg" alt="foto 1">
+                <img src="2.jpeg" alt="foto 2">
+                <img src="3.jpeg" alt="foto 3">
+                <img src="4.jpeg" alt="foto 4">
+            </div>
+            <button onclick="prevSlide()" aria-label="Slide Sebelumnya">&#10094;</button>
+            <button onclick="nextSlide()" aria-label="Slide Berikutnya">&#10095;</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;224 Bucin Land. semua hak dilindungi</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
